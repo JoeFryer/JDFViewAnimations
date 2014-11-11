@@ -24,6 +24,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		B59B0C850C7AE0DA4506633B /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */; };
+		F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		771254D18D2A130F1B9DA528 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AFFE7BF2AC76D50591F22F09 /* Pods-JDFViewAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDFViewAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDFViewAnimations/Pods-JDFViewAnimations.debug.xcconfig"; sourceTree = "<group>"; };
 		E3869512703AC88780B57DDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F25EA0F41A12D18200C3BB41 /* UIView+JDFShakeAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JDFShakeAnimations.h"; path = "../Pod/Classes/UIView+JDFShakeAnimations.h"; sourceTree = "<group>"; };
+		F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDFShakeAnimations.m"; path = "../Pod/Classes/UIView+JDFShakeAnimations.m"; sourceTree = "<group>"; };
 		F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* JDFViewAnimations */,
+				F25EA0F31A12D06C00C3BB41 /* JDFViewAnimations */,
+				6003F593195388D20070C39A /* JDFViewAnimationsDemo */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -129,7 +133,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* JDFViewAnimations */ = {
+		6003F593195388D20070C39A /* JDFViewAnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* JDFAppDelegate.h */,
@@ -141,6 +145,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
+			name = JDFViewAnimationsDemo;
 			path = JDFViewAnimations;
 			sourceTree = "<group>";
 		};
@@ -193,6 +198,15 @@
 				165A791F3A8195E73E68EDD2 /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F25EA0F31A12D06C00C3BB41 /* JDFViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				F25EA0F41A12D18200C3BB41 /* UIView+JDFShakeAnimations.h */,
+				F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */,
+			);
+			name = JDFViewAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JDFAppDelegate.m in Sources */,
+				F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */,
 				6003F5A7195388D20070C39A /* JDFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
