@@ -25,6 +25,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		B59B0C850C7AE0DA4506633B /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */; };
 		F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */; };
+		F25EA0F91A12D33500C3BB41 /* Maracas.png in Resources */ = {isa = PBXBuildFile; fileRef = F25EA0F81A12D33500C3BB41 /* Maracas.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		E3869512703AC88780B57DDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F25EA0F41A12D18200C3BB41 /* UIView+JDFShakeAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JDFShakeAnimations.h"; path = "../Pod/Classes/UIView+JDFShakeAnimations.h"; sourceTree = "<group>"; };
 		F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDFShakeAnimations.m"; path = "../Pod/Classes/UIView+JDFShakeAnimations.m"; sourceTree = "<group>"; };
+		F25EA0F81A12D33500C3BB41 /* Maracas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maracas.png; path = Resources/Maracas.png; sourceTree = "<group>"; };
 		F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 		6003F593195388D20070C39A /* JDFViewAnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F25EA0F71A12D30B00C3BB41 /* Resources */,
 				6003F59C195388D20070C39A /* JDFAppDelegate.h */,
 				6003F59D195388D20070C39A /* JDFAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
@@ -207,6 +210,14 @@
 				F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */,
 			);
 			name = JDFViewAnimations;
+			sourceTree = "<group>";
+		};
+		F25EA0F71A12D30B00C3BB41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F25EA0F81A12D33500C3BB41 /* Maracas.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25EA0F91A12D33500C3BB41 /* Maracas.png in Resources */,
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,

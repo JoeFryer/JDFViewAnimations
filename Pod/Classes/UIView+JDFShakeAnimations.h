@@ -10,4 +10,8 @@
 
 @interface UIView (JDFShakeAnimations)
 
++ (void)shakeViews:(NSArray *)views distance:(CGFloat)distance times:(NSInteger)times eachShakeTimeInterval:(NSTimeInterval)timeInterval completionBlock:(void(^)())completionBlock;
+
+- (void)shakeByDistance:(CGFloat)shakeDistance times:(NSInteger)times eachShakeTimeInterval:(NSTimeInterval)timeInterval completionBlock:(void(^)())completionBlock;
+
 @end
