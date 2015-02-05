@@ -9,7 +9,7 @@
 #import "JDFMenuViewController.h"
 
 // View Controllers
-#import "JDFViewController.h"
+#import "JDFShakeAnimationViewController.h"
 
 
 // Menu Items
@@ -67,7 +67,7 @@ static NSString *const JDFMenuViewControllerCellIdentifier = @"JDFMenuViewContro
     NSString *menuItem = self.menuItems[indexPath.row];
     
     if ([menuItem isEqualToString:JDFMenuViewControllerTableItemShake]) {
-        JDFViewController *shakeViewController = [[JDFViewController alloc] init];
+        JDFShakeAnimationViewController *shakeViewController = [[JDFShakeAnimationViewController alloc] init];
         shakeViewController.navigationItem.title = menuItem;
         [self.navigationController pushViewController:shakeViewController animated:YES];
     }

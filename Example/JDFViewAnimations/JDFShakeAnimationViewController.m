@@ -6,20 +6,20 @@
 //  Copyright (c) 2014 Joe Fryer. All rights reserved.
 //
 
-#import "JDFViewController.h"
+#import "JDFShakeAnimationViewController.h"
 
 // Categories
 #import "UIView+JDFShakeAnimations.h"
 
 
-@interface JDFViewController ()
+@interface JDFShakeAnimationViewController ()
 
 @property (nonatomic, strong) UIImageView *maracasImageView;
 
 @end
 
 
-@implementation JDFViewController
+@implementation JDFShakeAnimationViewController
 
 - (void)viewDidLoad
 {
