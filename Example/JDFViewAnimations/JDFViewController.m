@@ -25,9 +25,11 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     CGFloat width = 200.0f;
     self.maracasImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Maracas.png"]];
-    self.maracasImageView.frame = CGRectMake((self.view.frame.size.width / 2) - (width / 2), self.view.frame.size.height * 0.1f, width, width);
+    self.maracasImageView.frame = CGRectMake((self.view.frame.size.width / 2) - (width / 2), self.view.frame.size.height * 0.15f, width, width);
     [self.view addSubview:self.maracasImageView];
     
     CGFloat buttonWidth = 200.0f;

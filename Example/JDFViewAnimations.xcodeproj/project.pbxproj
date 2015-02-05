@@ -26,6 +26,7 @@
 		B59B0C850C7AE0DA4506633B /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */; };
 		F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */; };
 		F25EA0F91A12D33500C3BB41 /* Maracas.png in Resources */ = {isa = PBXBuildFile; fileRef = F25EA0F81A12D33500C3BB41 /* Maracas.png */; };
+		F2F936E41A83CEC2001AB2F2 /* JDFMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDFShakeAnimations.m"; path = "../Pod/Classes/UIView+JDFShakeAnimations.m"; sourceTree = "<group>"; };
 		F25EA0F81A12D33500C3BB41 /* Maracas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maracas.png; path = Resources/Maracas.png; sourceTree = "<group>"; };
 		F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F936E21A83CEC2001AB2F2 /* JDFMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFMenuViewController.h; path = ViewControllers/JDFMenuViewController.h; sourceTree = "<group>"; };
+		F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFMenuViewController.m; path = ViewControllers/JDFMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,14 +141,13 @@
 		6003F593195388D20070C39A /* JDFViewAnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F25EA0F71A12D30B00C3BB41 /* Resources */,
+				F2F936E11A83CE90001AB2F2 /* View Controllers */,
 				6003F59C195388D20070C39A /* JDFAppDelegate.h */,
 				6003F59D195388D20070C39A /* JDFAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
 				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* JDFViewController.h */,
-				6003F5A6195388D20070C39A /* JDFViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				F25EA0F71A12D30B00C3BB41 /* Resources */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = JDFViewAnimationsDemo;
@@ -218,6 +220,17 @@
 				F25EA0F81A12D33500C3BB41 /* Maracas.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		F2F936E11A83CE90001AB2F2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2F936E21A83CEC2001AB2F2 /* JDFMenuViewController.h */,
+				F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */,
+				6003F5A5195388D20070C39A /* JDFViewController.h */,
+				6003F5A6195388D20070C39A /* JDFViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +404,7 @@
 				F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */,
 				6003F5A7195388D20070C39A /* JDFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F2F936E41A83CEC2001AB2F2 /* JDFMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
