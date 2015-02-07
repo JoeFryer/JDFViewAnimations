@@ -27,6 +27,8 @@
 		F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */; };
 		F25EA0F91A12D33500C3BB41 /* Maracas.png in Resources */ = {isa = PBXBuildFile; fileRef = F25EA0F81A12D33500C3BB41 /* Maracas.png */; };
 		F2F936E41A83CEC2001AB2F2 /* JDFMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */; };
+		F2F936E71A83FF54001AB2F2 /* UIView+JDFPulseAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F936E61A83FF54001AB2F2 /* UIView+JDFPulseAnimations.m */; };
+		F2F936EA1A840876001AB2F2 /* JDFPulseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F936E91A840876001AB2F2 /* JDFPulseAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		F2ABE6B08A85B42B65880D1B /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F936E21A83CEC2001AB2F2 /* JDFMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFMenuViewController.h; path = ViewControllers/JDFMenuViewController.h; sourceTree = "<group>"; };
 		F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFMenuViewController.m; path = ViewControllers/JDFMenuViewController.m; sourceTree = "<group>"; };
+		F2F936E51A83FF54001AB2F2 /* UIView+JDFPulseAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+JDFPulseAnimations.h"; path = "../Pod/Classes/UIView+JDFPulseAnimations.h"; sourceTree = "<group>"; };
+		F2F936E61A83FF54001AB2F2 /* UIView+JDFPulseAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+JDFPulseAnimations.m"; path = "../Pod/Classes/UIView+JDFPulseAnimations.m"; sourceTree = "<group>"; };
+		F2F936E81A840876001AB2F2 /* JDFPulseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDFPulseAnimationViewController.h; path = ViewControllers/JDFPulseAnimationViewController.h; sourceTree = "<group>"; };
+		F2F936E91A840876001AB2F2 /* JDFPulseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDFPulseAnimationViewController.m; path = ViewControllers/JDFPulseAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,8 @@
 			children = (
 				F25EA0F41A12D18200C3BB41 /* UIView+JDFShakeAnimations.h */,
 				F25EA0F51A12D18200C3BB41 /* UIView+JDFShakeAnimations.m */,
+				F2F936E51A83FF54001AB2F2 /* UIView+JDFPulseAnimations.h */,
+				F2F936E61A83FF54001AB2F2 /* UIView+JDFPulseAnimations.m */,
 			);
 			name = JDFViewAnimations;
 			sourceTree = "<group>";
@@ -229,6 +237,8 @@
 				F2F936E31A83CEC2001AB2F2 /* JDFMenuViewController.m */,
 				6003F5A5195388D20070C39A /* JDFShakeAnimationViewController.h */,
 				6003F5A6195388D20070C39A /* JDFShakeAnimationViewController.m */,
+				F2F936E81A840876001AB2F2 /* JDFPulseAnimationViewController.h */,
+				F2F936E91A840876001AB2F2 /* JDFPulseAnimationViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -400,6 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F936EA1A840876001AB2F2 /* JDFPulseAnimationViewController.m in Sources */,
+				F2F936E71A83FF54001AB2F2 /* UIView+JDFPulseAnimations.m in Sources */,
 				6003F59E195388D20070C39A /* JDFAppDelegate.m in Sources */,
 				F25EA0F61A12D18200C3BB41 /* UIView+JDFShakeAnimations.m in Sources */,
 				6003F5A7195388D20070C39A /* JDFShakeAnimationViewController.m in Sources */,

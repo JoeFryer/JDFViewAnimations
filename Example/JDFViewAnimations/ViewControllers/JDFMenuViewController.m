@@ -10,6 +10,8 @@
 
 // View Controllers
 #import "JDFShakeAnimationViewController.h"
+#import "JDFPulseAnimationViewController.h"
+
 
 
 // Menu Items
@@ -70,6 +72,10 @@ static NSString *const JDFMenuViewControllerCellIdentifier = @"JDFMenuViewContro
         JDFShakeAnimationViewController *shakeViewController = [[JDFShakeAnimationViewController alloc] init];
         shakeViewController.navigationItem.title = menuItem;
         [self.navigationController pushViewController:shakeViewController animated:YES];
+    } else if ([menuItem isEqualToString:JDFMenuViewControllerTableItemPulse]) {
+        JDFPulseAnimationViewController *pulseVieController = [[JDFPulseAnimationViewController alloc] init];
+        pulseVieController.navigationItem.title = menuItem;
+        [self.navigationController pushViewController:pulseVieController animated:YES];
     }
 }
 
