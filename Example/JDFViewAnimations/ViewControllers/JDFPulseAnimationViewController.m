@@ -52,7 +52,9 @@
 
 - (void)shakeTheMaracasButtonPressed:(UIButton *)sender
 {
-    [self.circleView jdf_pulseViewWithMaximumScale:1.15 minimumScale:0.9 oscillations:3 duration:0.7];
+    [self.circleView jdf_pulseViewWithMaximumScale:1.15 minimumScale:0.9 oscillations:3 duration:0.7 completionBlock:^{
+        NSLog(@"animation completed");
+    }];
 }
 
 - (void)shakeQuicklyButtonPressed:(UIButton *)sender

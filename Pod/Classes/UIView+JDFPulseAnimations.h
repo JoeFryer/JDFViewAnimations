@@ -11,5 +11,6 @@
 @interface UIView (JDFPulseAnimations)
 
 - (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration;
+- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration completionBlock:(void(^)())completionBlock;
 
 @end

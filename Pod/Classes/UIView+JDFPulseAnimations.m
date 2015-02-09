@@ -10,8 +10,13 @@
 
 @implementation UIView (JDFPulseAnimations)
 
-- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration
+- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration completionBlock:(void (^)())completionBlock
 {
+    [CATransaction begin];
+    if (completionBlock) {
+        [CATransaction setCompletionBlock:completionBlock];
+    }
+    
     CATransform3D transform = self.layer.transform;
     CGFloat upperIncrement = (maximumScale - 1.0f) / (oscillations + 1);
     CGFloat lowerIncrement = (1.0f - minimumScale) / (oscillations + 1);
@@ -36,6 +41,13 @@
     pulseAnimation.timingFunctions = timingFunctions;
     
     [self.layer addAnimation:pulseAnimation forKey:@"pulse"];
+    
+    [CATransaction commit];
+}
+
+- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration
+{
+    [self jdf_pulseViewWithMaximumScale:maximumScale minimumScale:minimumScale oscillations:oscillations duration:duration completionBlock:nil];
 }
 
 @end
