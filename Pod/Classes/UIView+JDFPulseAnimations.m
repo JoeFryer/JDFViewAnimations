@@ -16,6 +16,7 @@
     CGFloat upperIncrement = (maximumScale - 1.0f) / (oscillations + 1);
     CGFloat lowerIncrement = (1.0f - minimumScale) / (oscillations + 1);
     
+    NSMutableArray *timingFunctions = [NSMutableArray arrayWithObjects:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut], nil];
     NSMutableArray *values = [NSMutableArray array];
     [values addObject:[NSValue valueWithCATransform3D:transform]];
     for (NSInteger i = 0; i < oscillations; i++) {
@@ -24,6 +25,7 @@
         NSLog(@"Upper: %f Lower: %f", upperScale, lowerScale);
         [values addObject:[NSValue valueWithCATransform3D:CATransform3DScale(transform, upperScale, upperScale, 1.0f)]];
         [values addObject:[NSValue valueWithCATransform3D:CATransform3DScale(transform, lowerScale, lowerScale, 1.0f)]];
+        [timingFunctions addObject:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     }
     [values addObject:[NSValue valueWithCATransform3D:transform]];
     
@@ -31,6 +33,7 @@
     pulseAnimation.duration = duration;
     pulseAnimation.values = values;
     pulseAnimation.removedOnCompletion = YES;
+    pulseAnimation.timingFunctions = timingFunctions;
     
     [self.layer addAnimation:pulseAnimation forKey:@"pulse"];
 }
