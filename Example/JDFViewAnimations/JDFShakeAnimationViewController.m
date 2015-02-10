@@ -6,28 +6,30 @@
 //  Copyright (c) 2014 Joe Fryer. All rights reserved.
 //
 
-#import "JDFViewController.h"
+#import "JDFShakeAnimationViewController.h"
 
 // Categories
 #import "UIView+JDFShakeAnimations.h"
 
 
-@interface JDFViewController ()
+@interface JDFShakeAnimationViewController ()
 
 @property (nonatomic, strong) UIImageView *maracasImageView;
 
 @end
 
 
-@implementation JDFViewController
+@implementation JDFShakeAnimationViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     CGFloat width = 200.0f;
     self.maracasImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Maracas.png"]];
-    self.maracasImageView.frame = CGRectMake((self.view.frame.size.width / 2) - (width / 2), self.view.frame.size.height * 0.1f, width, width);
+    self.maracasImageView.frame = CGRectMake((self.view.frame.size.width / 2) - (width / 2), self.view.frame.size.height * 0.15f, width, width);
     [self.view addSubview:self.maracasImageView];
     
     CGFloat buttonWidth = 200.0f;
