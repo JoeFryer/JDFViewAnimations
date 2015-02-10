@@ -10,6 +10,13 @@
 
 @implementation UIView (JDFPulseAnimations)
 
+#pragma mark - Pulse Animation
+
+- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration
+{
+    [self jdf_pulseViewWithMaximumScale:maximumScale minimumScale:minimumScale oscillations:oscillations duration:duration completionBlock:nil];
+}
+
 - (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration completionBlock:(void (^)())completionBlock
 {
     [CATransaction begin];
@@ -45,9 +52,37 @@
     [CATransaction commit];
 }
 
-- (void)jdf_pulseViewWithMaximumScale:(CGFloat)maximumScale minimumScale:(CGFloat)minimumScale oscillations:(NSInteger)oscillations duration:(NSTimeInterval)duration
+
+#pragma mark - Convenience - Pre-defined animations
+
+- (void)jdf_shortQuickSinglePulseAnimation
 {
-    [self jdf_pulseViewWithMaximumScale:maximumScale minimumScale:minimumScale oscillations:oscillations duration:duration completionBlock:nil];
+    [self jdf_shortQuickSinglePulseAnimationWithCompletionBlock:nil];
+}
+
+- (void)jdf_shortQuickSinglePulseAnimationWithCompletionBlock:(void (^)())completionBlock
+{
+    [self jdf_pulseViewWithMaximumScale:1.05 minimumScale:0.95 oscillations:1 duration:0.25 completionBlock:completionBlock];
+}
+
+- (void)jdf_mediumPulseAnimation
+{
+    [self jdf_mediumPulseAnimationWithCompletionBlock:nil];
+}
+
+- (void)jdf_mediumPulseAnimationWithCompletionBlock:(void (^)())completionBlock
+{
+    [self jdf_pulseViewWithMaximumScale:1.15 minimumScale:0.9 oscillations:2 duration:0.4 completionBlock:completionBlock];
+}
+
+- (void)jdf_largePulseAnimation
+{
+    [self jdf_largePulseAnimationWithCompletionBlock:nil];
+}
+
+- (void)jdf_largePulseAnimationWithCompletionBlock:(void (^)())completionBlock
+{
+    [self jdf_pulseViewWithMaximumScale:1.3 minimumScale:0.75 oscillations:2 duration:0.5 completionBlock:completionBlock];
 }
 
 @end
